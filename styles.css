@@ -1,0 +1,48 @@
+@media only screen and (min-width: 550px) {
+    body {
+        background-image: url('http://static.lawrencehallofscience.org/scienceview/scienceview.berkeley.edu/html/view/view_assets/images/newview.jpg');
+        background-size: 200vh;
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .page-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .page-content {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.page-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 81vh;
+    padding-bottom: 2%;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 1);
+    height: 10vh;
+}
+
+.footer-img {
+    width: 24vh;
+    height: auto;
+    text-align: right;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.divider {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
