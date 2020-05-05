@@ -39,10 +39,34 @@ footer {
 
 .center {
     margin: auto;
-    width: 50%;
+    width: auto;
     padding: 10px;
 }
 
 .divider {
     border-top: 1px solid rgba(0,0,0,0.1);
 }
+
+.member-container {
+    position: relative;
+    border-radius: 50%;
+}
+.member-image {
+    display: block;
+    width: 100%;
+    
+}
+.member-overlay {
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    transition: .35s ease;
+    border-radius: 50%;
+    opacity:0;
+    
+}
+.member-container:hover .member-overlay {
+    opacity: 0.5;
+  }

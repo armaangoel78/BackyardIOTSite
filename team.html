@@ -79,8 +79,10 @@
                 <div class="row">
                     <div class="center">
                         <h2>Abhi</h2>
-                        <a class="overlay" href="http://linkedin.com/in/abhi12-ayalur/"><img class="icon" src="images/linkedin.png"></a>
-                        <img src="images/abhi.png">
+                        <div class="member-container">
+                            <img src="images/abhi.png" class="member-image">
+                            <a class="member-overlay" href="http://linkedin.com/in/abhi12-ayalur/"><img class="icon" src="images/linkedin.png"></a>
+                        </div>
                     </div>
                 </div>
 
@@ -91,27 +93,35 @@
                 <div class="row">
                     <div class="six columns">
                         <h2>Sean</h2>
-                        <a class="overlay" href="https://www.linkedin.com/in/seankimkdy/"><img class="icon" src="images/linkedin.png"></a>
-                        <img src="images/sean.png">
+                        <div class="member-container">
+                            <img src="images/sean.png" class="member-image">
+                            <a class="member-overlay" href="https://www.linkedin.com/in/seankimkdy/"><img class="icon" src="images/linkedin.png"></a>
+                        </div>
                     </div>
 
                     <div class="six columns">
                         <h2>Max</h2>
-                        <a class="overlay" href=""><img class="icon" src="images/linkedin.png"></a>
-                        <img src="images/max.jpg">
+                        <div class="member-container">
+                            <img src="images/max.jpg" class="member-image">
+                            <a class="member-overlay" href="https://callaunchpad.org/#/"><img class="icon" src="images/linkedin.png"></a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="six columns">
                         <h2>Richard</h2>
-                        <a class="overlay" href="https://www.linkedin.com/in/richard-li-329936185/"><img class="icon" src="images/linkedin.png"></a>
-                        <img src="images/richard.jpg">
+                        <div class="member-container">
+                            <img src="images/richard.jpg" class="member-image">
+                            <a class="member-overlay" href="https://www.linkedin.com/in/richard-li-329936185/"><img class="icon" src="images/linkedin.png"></a>
+                        </div>
                     </div>
                     <div class="six columns">
                         <h2>Armaan</h2>
-                        <a class="overlay" href="https://www.linkedin.com/in/armaangoel/"><img class="icon" src="images/linkedin.png"></a>
-                        <img src="images/armaan.jpeg">
+                        <div class="member-container">
+                            <img src="images/armaan.jpeg" class="member-image">
+                            <a class="member-overlay" href="https://www.linkedin.com/in/armaangoel/"><img class="icon" src="images/linkedin.png"></a>
+                        </div>
                     </div>
                 </div>                
                 
@@ -144,21 +154,9 @@
     height: auto;
 }
 
-.overlay {
-    position: absolute;
-    align-items: center;
-    opacity:0;
-    transition: ease;
-    /* padding: 10%; */
-}
-
-.overlay:hover {
-    opacity: 0.5;
-    transition: 0.5s ease;
-}
-
 img {
     max-width: 22.5em;
+    max-height: 22.5em;
     border-radius: 200px;
 }
 
@@ -244,6 +242,12 @@ footer {
 
 .divider {
     border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width: 1000px) {
+    .center {
+        width: 100%;
+    }
 }
 
 </style>
